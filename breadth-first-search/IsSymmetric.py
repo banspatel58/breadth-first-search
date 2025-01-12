@@ -17,6 +17,8 @@ def is_symmetric (root: Optional [TreeNode]) -> bool:
     if not root:
         return False
 
+    return is_mirror(root.left, root.right)
+
 def is_mirror(left_child: Optional[TreeNode], right_child: Optional[TreeNode]) -> bool:
 
     if not left_child and not right_child:
