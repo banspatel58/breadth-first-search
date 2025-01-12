@@ -1,7 +1,7 @@
 from typing import List
 from TreeNode import TreeNode
 
-class BinaryTreeConstruction:
+class TreeConstructor:
 
     def insert_level_order (self, arr: List [int], start: int, end: int) -> TreeNode:
         root = None

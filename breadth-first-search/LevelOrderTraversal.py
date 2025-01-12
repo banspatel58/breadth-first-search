@@ -13,7 +13,7 @@ Output: []
 """
 from typing import Optional, List
 from TreeNode import TreeNode
-from BinaryTreeConstruction import BinaryTreeConstruction
+from Constructor import TreeConstructor
 
 
 def level_order(root: Optional[TreeNode]) -> List[List[int]]:
@@ -39,8 +39,8 @@ def level_order(root: Optional[TreeNode]) -> List[List[int]]:
     return result
 
 if __name__ == '__main__':
-    constructor = BinaryTreeConstruction()
+    constructor = TreeConstructor()
     arr_input = [3,9,20,None,None,15,7]
-    root = constructor.insert_level_order(arr_input, 0, len(arr_input))
+    root1 = constructor.insert_level_order(arr_input, 0, len(arr_input))
 
-    level_order(root)
+    level_order(root1)
